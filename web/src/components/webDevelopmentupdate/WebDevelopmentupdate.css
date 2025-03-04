@@ -1,0 +1,482 @@
+
+:root {
+    --primary-color: #0066cc;
+    --secondary-color: #00a2ff;
+    --text-color: #333;
+    --background-light: #f4f4f8;
+    --background-dark: #042c57;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ .web-development-container{
+  background-image: linear-gradient(to bottom, rgb(1, 1, 10) 0%, rgb(0, 0, 3) 40%, rgb(2, 2, 5) 70%, black 100%);
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}  
+ .container-web {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 100vh;
+    justify-content: space-evenly;
+    margin: 3rem;
+    
+  }
+  
+  .container-web .content {
+    /* flex: 1; */
+    width: 50%;
+    color: white;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+  
+  .content h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    font-family: 'Inria Serif';
+    
+  }
+  
+  .content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    
+    color: var(--background-light);
+  }
+  
+  .iamge{
+    width: 45%;
+    
+  }
+  .web-hero-image-container{
+    width: 100%; 
+    height: 500px;
+  }
+  .web-hero-image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.2); */
+  }
+  .explore-dev-link {
+    margin: 1rem;
+    border: 2px solid white;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.explore-dev-link:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.explore-button-container {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center; /* Centers the button */
+}
+
+/* website development */
+
+  .web-developments-process {
+    /* background-color: var(--background-light); */
+    background-color: rgba(217,217,217,1);
+    /* padding: 4rem 6rem; */
+    padding: 1rem ;
+    text-align: center;
+    
+  }
+  
+  .web-developments-process .web-dev-head {
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-top: 40px;
+    margin-bottom: 2rem;
+    
+  }
+  .process-steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+  .process-tops{
+    max-width: 90%;
+    margin: 3rem auto;
+    text-align: center;
+    
+  }
+  .web-dev-sub{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  
+  }
+  .web-on-presence{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    
+  }
+
+
+.process-steps-card{
+    padding: 1rem 2rem;
+    max-width:200px;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.process-steps-card:hover{
+  /* transform: scale(1.4); */
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+
+.steps-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color:#fff;
+  opacity:0.9;
+}
+
+/* Image styling */
+.process-step img {
+  max-width: 80px;
+  height: auto;
+}
+
+/* transfromig the sectior */
+.transformic-container {
+  background-color:transparent;
+  padding: 3rem 2rem;
+  margin: 3rem 2rem;
+}
+
+.our-vision {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.transformic-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(241, 241, 241);
+}
+
+.transform-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allows better responsiveness */
+}
+
+.transform-body-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-transform-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  height: auto; 
+  padding: 1rem;
+}
+
+.img-transform-container img {
+  width: 100%; 
+  max-height: 400px; 
+  border-radius: 10px; 
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .transformic-container {
+    padding: 1rem 1rem;
+    margin: 2rem 0rem;
+  }
+  .transform-body {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .img-transform-container {
+    padding: 0.5rem;
+  }
+
+  .transformic-heading {
+    font-size: 2.5rem; 
+  }
+}
+
+
+.transform-body-right {
+  flex: 1;
+}
+
+.transformic-subtitle {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+
+.transform-body,
+.transform-body-second{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(44, 43, 43, 1);
+  max-width: 90%;
+  margin: 3rem auto;
+
+}
+.transform-body-second{
+  margin-top:-9rem;
+}
+.tranfrom-body-left{
+  width: 35%;
+  height: 480px;
+}
+
+.tranfrom-body-left .img-container,
+.transform-body-second-left .img-container{
+  width: 100%;
+  height: 100%;
+}
+.img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+.img-container img:hover{
+  transform: scale(1.03);
+}
+.tranfrom-body-right{
+  width: 60%;
+  padding: 0rem 1rem;
+  
+}
+.transform-subtitle {
+  color: rgb(213, 209, 209);
+  font-size: 1.2rem;
+}
+.transform-body-second-left{
+  width: 30%;
+  height: 500px;
+}
+.transform-body-second-right{
+  width: 65%;
+}
+.transform-body-second{
+  margin-bottom: 0rem;
+}
+.transform-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.transform-btn button {
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+.transform-btn button:hover {
+  background-color: #0056b3; 
+  transform: translateY(-2px);
+}
+
+.transform-btn button:active {
+  transform: translateY(1px);
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .content h1 {
+    font-size: 3.5rem;
+    
+  }
+  .content p {
+    font-size: 1rem;
+  }
+  .process-steps-container {
+    gap: 1rem;
+}
+
+.process-step {
+    max-width: 280px;
+}
+.iamge{
+    width: 50%;
+    }
+    .web-development-process .web-dev-head {
+      font-size: 4rem; 
+    }
+  
+    .tranformic-heading {
+      font-size: 3.5rem; 
+    }
+  
+    .process-steps {
+      flex-wrap: wrap; 
+      gap: 2rem; 
+    }
+  
+    .process-step {
+      width: 45%; 
+    }
+  
+    .explore-dev-link{
+      margin: 0.5rem;
+    }
+    .explore-dev-link{
+      padding: 0.3rem 0.5rem;
+    }
+    .tranfrom-body,
+    .transform-body-second {
+      flex-direction: column; /* Stack items vertically */
+       margin-top: 4rem;
+      gap: 2rem; 
+    }
+
+    .tranfrom-body-left .img-container,
+  .transform-body-second-left .img-container {
+    width: 90%;
+    height: 500px;
+  }
+
+    .tranfrom-body-left ,
+    .transform-body-second-left{
+      width: 100%;
+      text-align: center;
+    } 
+    .tranfrom-body-left .img-container,
+    .transform-body-second-left .img-container{
+      width: 100%;
+      object-fit: contain;
+      text-align: center;
+    }
+    .tranfrom-body-right ,
+    .transform-body-second-right {
+      width: 100%;
+      margin: 2rem 3rem;
+      text-align: left;
+      padding-left: 2rem;
+    }
+    .transfromic-subtile {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+  }
+  
+}
+
+
+
+@media (max-width: 768px) {
+  
+  .web-developments-process {
+    width: 100%; 
+    
+  }
+ .container-web {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.web-hero-image-container{
+  width: 100%; 
+  height:auto;
+}
+.container-web .content {
+  width: 100%;
+}
+.transform-body,
+.transform-body-second{
+  width: 100%;
+}
+.iamge{
+  width: 100%;
+  
+}
+  .content{
+    width: 100%;
+  }
+  .content h1 {
+    font-size: 2rem;
+    
+  }
+  .content p {
+    font-size: 0.8rem;
+  }
+  
+
+    .web-development-process .web-dev-head {
+      font-size: 1.8rem; 
+    }
+  
+    .tranformic-heading {
+      font-size: 2.5rem; 
+    }
+    .process-step {
+      width: 100%; 
+    }
+  
+    .explore-dev-link{
+      margin: 0.2rem;
+    }
+    .explore-dev-link{
+      padding: 0.2rem 0.2rem;
+    }
+    .tranformic-container{
+      background-color: transparent;
+      padding: 0;
+      margin: 3rem 2rem;
+    }
+    .process-steps-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .process-step {
+      max-width: 90%;
+  }
+}

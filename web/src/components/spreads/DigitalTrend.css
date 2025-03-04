@@ -1,0 +1,164 @@
+
+.digital-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: rgb(131, 37, 219);
+    border-radius: 1px;
+    min-height: 80vh; 
+    width: 100%;
+    margin-bottom:2rem;
+}
+
+.digital-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+
+.d-left h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.d-medium {
+    flex: 1;
+    text-align: center;
+}
+
+.d-medium p {
+    font-size: 22px;
+    color: rgb(244, 242, 242);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.d-right {
+    display: flex;
+    gap: 10px;
+}
+
+.d-right button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.d-right button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: #ffea00;
+}
+
+.carousel-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 15px;
+    width: 100%;
+    padding: 10px 0;
+    white-space: nowrap; 
+}
+
+
+
+.carousel-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.carousel-item {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.carousel-card {
+    width: 400px;  
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    transition: 0.3s;
+    flex: 0 0 auto; 
+}
+
+
+.carousel-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.carousel-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.carousel-card:hover img {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(1.2); 
+}
+.carousel-card h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 600;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: left; 
+}
+
+
+
+
+.border-half {
+    width: 50px;
+    height: 4px;
+    background: rgb(119, 198, 251);
+    margin-top: 5px;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out; 
+}
+
+.carousel-card:hover .border-half {
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .digital-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .d-left h1 {
+        font-size: 26px;
+    }
+
+    .d-medium p {
+        font-size: 18px;
+    }
+
+    .carousel-card {
+        width: 280px;
+    }
+
+    .d-right {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}

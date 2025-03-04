@@ -1,0 +1,207 @@
+.android-mobile-app {
+    background-image: linear-gradient(to bottom, rgb(1, 1, 10) 0%, rgb(0, 0, 3) 40%, rgb(2, 2, 5) 70%, black 100%);
+    margin-top: 4rem;
+
+}
+
+.custom-android-services {
+    border-top-left-radius: 35%;
+    background-color:rgba(255, 255, 255, 1);
+    transition: all .2s ease-in-out;
+}
+ .android-app-consulting {
+    border-top-right-radius: 35%;
+    /* background-color: rgb(246, 135, 135); */
+    background-color: rgba(76, 76, 78, 1);
+   transition: all .2s ease-in-out;
+
+}
+ .android-app-design {
+    border-bottom-left-radius: 35%;
+    background-color: rgba(76, 76, 78, 1);
+
+}
+ .android-app-design:hover,
+ .android-app-consulting:hover{
+  background-color: rgb(2, 34, 60);
+  color: white;
+  transform: scale(1.04);
+  transition: all .2s ease-in-out;
+}
+ .android-app-testing {
+    border-bottom-right-radius: 35%;
+    background-color:rgba(255, 255, 255, 1);
+    transition: all .2s ease-in-out;
+}
+
+ .android-app-testing:hover,
+ .custom-android-services:hover {
+  background-color: rgb(27, 75, 187);
+  color: white;
+  transform: scale(1.04);
+}
+
+/* Why Choose Us - Android Section */
+.expert-android-team {
+    margin-left: 0px;
+}
+
+.android-agile-methodology {
+    margin-left: 60px;
+}
+
+.android-user-centric {
+    margin-left: 120px;
+}
+
+.android-cost-effective {
+    margin-left: 180px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .android-agile-methodology {
+        margin-left: 40px;
+    }
+
+    .android-user-centric {
+        margin-left: 80px;
+    }
+
+    .android-cost-effective {
+        margin-left: 120px;
+    }
+    .custom-android-services{
+        border-radius: 0;
+    }
+    .android-app-consulting{
+        border-radius: 0;
+    }
+    .android-app-design{
+        border-radius: 0;
+    }
+    .android-app-testing{
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .android-agile-methodology,
+    .android-user-centric,
+    .android-cost-effective {
+        margin-left: 0px;
+    }
+}
+
+
+
+/* ============= */
+
+/* Base Styles (Mobile-First) */
+.android-mobile-app {
+    background-image: linear-gradient(to bottom, rgb(1, 1, 10) 0%, rgb(0, 0, 3) 40%, rgb(2, 2, 5) 70%, black 100%);
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+/* Service Section Grid */
+.android-service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid */
+    gap: 1.5rem; /* Consistent spacing */
+    padding: 1rem;
+}
+
+/* Service Card Styles */
+.android-service-card {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1.5rem;
+    border-radius: 0; /* No border radius for mobile */
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.android-service-card.dark {
+    background-color: rgba(76, 76, 78, 1);
+    color: white;
+}
+
+/* Hover Effects (for non-touch devices) */
+@media (hover: hover) {
+    .android-service-card:hover {
+        background-color: rgb(27, 75, 187);
+        color: white;
+        transform: scale(1.05);
+    }
+
+    .android-service-card.dark:hover {
+        background-color: rgb(2, 34, 60);
+        color: white;
+        transform: scale(1.05);
+    }
+}
+
+/* Why Choose Us Section */
+.android-why-choose-us {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.android-why-choose-us .feature {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Responsive Font Sizes */
+.android-mobile-app h2 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.android-mobile-app p {
+    font-size: clamp(1rem, 3vw, 1.2rem); /* Responsive font size */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Tablet and Desktop Adjustments */
+@media (min-width: 768px) {
+    .android-service-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+        border-radius: 0;
+    }
+
+    .android-why-choose-us {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .android-why-choose-us .feature {
+        flex: 1 1 calc(50% - 1rem); /* Two features per row */
+        max-width: calc(50% - 1rem);
+    }
+
+    /* Add border radius for larger screens */
+    .android-service-card {
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .android-service-grid {
+        grid-template-columns: repeat(4, 1fr); /* Four columns for desktops */
+        border-radius: 0;
+    }
+
+    .android-why-choose-us .feature {
+        flex: 1 1 calc(25% - 1rem); /* Four features per row */
+        max-width: calc(25% - 1rem);
+    }
+}

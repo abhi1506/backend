@@ -1,0 +1,116 @@
+.HoveringContent-Container {
+          max-width: 95%;
+          margin: 2rem auto;
+          padding: 0 15px;
+        }
+        
+        .hovering-container-2 {
+          display: flex;
+          flex-wrap: wrap; 
+          justify-content: center;
+          gap: 1.5rem;
+          height: auto; 
+        }
+        
+        .hovering-main-container {
+          width: calc(33.33% - 1rem); 
+          height: 600px;
+          transition: transform 0.3s ease;
+        }
+        
+        .Hovering-wrapper-img {
+          position: relative;
+  width: 100%;
+  overflow: hidden;
+        }
+        
+        .Hovering-wrapper-img img {
+          width: 100%;
+          aspect-ratio: 11 / 9; 
+          object-fit: cover;
+          object-position: center;
+          display: block;
+          transition: transform 0.3s ease;
+        }
+        
+        
+        
+        .Hovering-content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          height: 100%;
+          padding: 2rem 1rem;
+          /* transform: translateY(100%); */
+          opacity: 1;
+          transition: opacity 0.2s ease,  transform 0.3s ease;
+          transform: translateY(100%);
+        }
+        .hovering-main-container:hover .Hovering-content{
+          opacity: 1;
+          transform: translateY(0);
+        }
+       
+        
+        .hoverin-content-header {
+          font-size: 1.8rem;
+          font-weight: bold;
+          margin-bottom: 15px;
+          text-align: left;
+          color: rgb(234, 229, 229);
+        }
+        
+        .hovering-content-subtitle {
+          font-size: 1rem;
+          line-height: 1.5;
+          font-weight: 300;
+          color: rgb(225, 225, 225);
+          text-align: left;
+        }
+        
+        /* Media Queries for Responsiveness */
+        
+        /* Tablets */
+        @media (max-width: 1024px) {
+          .hovering-main-container {
+            width: calc(50% - 1rem); /* 2 items per row on tablets */
+            height: 450px; /* Adjust height for tablets */
+          }
+        
+          .Hovering-content {
+            padding: 20px; 
+          }
+        
+          .hoverin-content-header {
+            font-size: 1.8rem; /* Adjust font size */
+          }
+        
+          .hovering-content-subtitle {
+            font-size: 1.3rem; /* Adjust font size */
+          }
+        }
+        
+        /* Mobile Devices */
+        @media (max-width: 768px) {
+          .hovering-main-container {
+            flex: 1 1 100%; /* Ensures full width */
+            max-width: 90%; /* Prevents unwanted gaps */
+            height: auto; /* Adjusts dynamically */
+          }
+        
+          .Hovering-content {
+            padding: 15px; /* Less padding for smaller screens */
+          }
+        
+          .hoverin-content-header {
+            font-size: 1.5rem; /* Prevents overly large titles */
+          }
+        
+          .hovering-content-subtitle {
+            font-size: 0.8rem; /* Keeps it readable */
+          }
+
+        
+        }

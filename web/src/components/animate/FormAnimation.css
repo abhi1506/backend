@@ -1,0 +1,86 @@
+/* FormAnimation.css */
+.animated-form {
+    animation: formAppear 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    /* background: rgba(255, 255, 255, 0.05); */
+    padding: 10px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); */
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
+    /* backdrop-filter: blur(4px); */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .animated-form:hover {
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-element {
+    animation: elementAppear 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  
+  @keyframes formAppear {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.98);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  @keyframes elementAppear {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add some basic form styling that looks good */
+  /* .animated-form input,
+  .animated-form textarea,
+  .animated-form select,
+  .animated-form button {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .animated-form input:focus,
+  .animated-form textarea:focus,
+  .animated-form select:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+  }
+  
+  .animated-form button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  .animated-form button:hover {
+    background: #3a7dbd;
+    transform: translateY(-1px);
+  }
+  
+  .animated-form button:active {
+    background: #2d6ba3;
+    transform: translateY(1px);
+  } */

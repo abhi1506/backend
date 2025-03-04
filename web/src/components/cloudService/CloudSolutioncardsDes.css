@@ -1,0 +1,140 @@
+.cloud-solutions_desc {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .cloud-solutions_desc h1 {
+    font-size: 2.5rem;
+    text-align: left;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  
+  .cards-container-cloud_desc {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  
+   .first-row{
+    justify-content: space-between;
+   }
+   .third-row{
+    justify-content: space-between;
+   }
+  .card-cloud-sol_desc {
+    background: rgb(29, 6, 158);
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    width: 220px;
+    margin: 1rem;
+    border: 1px solid #fff;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: var(--delay);
+  }
+  .card-cloud-sol_desc.center-card{
+    justify-content: center;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card-cloud-sol_desc:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 255, 0.4);
+    border: 1px solid cyan;
+  }
+  
+  .card-cloud-sol_desc h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-cloud-sol_desc p {
+    color: rgb(210, 227, 240);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* Tablet View */
+  @media screen and (max-width: 1024px) {
+   
+    .card-cloud-sol_desc {
+      width: 100%;
+      max-width: 280px;
+    }
+  
+    .cloud-solutions_desc h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  
+  /* Mobile View */
+  @media screen and (max-width: 768px) {
+    .first-row, .third-row {
+      justify-content: space-between;
+      flex-direction: column;
+      margin: 13px;
+      gap: 1rem;
+  }
+
+  
+ 
+  
+    .card-cloud-sol_desc {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  
+    .cloud-solutions_desc h1 {
+      font-size: 1.5rem;
+      padding: 0 15px;
+    }
+  
+    .card-cloud-sol_desc h3 {
+      font-size: 1rem;
+    }
+  
+    .card-cloud-sol_desc p {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Small Mobile View */
+  @media screen and (max-width: 480px) {
+    .cloud-solutions_desc {
+      padding: 20px 10px;
+    }
+  
+    .card-cloud-sol_desc {
+      max-width: 260px;
+      padding: 15px;
+    }
+  
+    .cloud-solutions_desc h1 {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+    }
+  }

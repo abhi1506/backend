@@ -1,0 +1,166 @@
+.third-section-container {
+
+  position: relative;
+  padding: 3rem 2rem;
+  overflow: hidden; /* Prevent any overflow issues */
+}
+
+/* Main container flex layout */
+.third-section-main {
+  padding:1rem 1rem;
+  max-width:1300px;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Ensures wrapping in smaller screens */
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+/* Left section styling */
+.third-section-main-left {
+  width: 45%;
+  color: white;
+  margin: 1rem;
+}
+
+.third-section-left-content {
+  margin: 1rem;
+}
+
+.third-section-heading {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.third-section-subtitle {
+  font-size: 1rem;
+  color: var(--background-light);
+}
+
+/* Right section (Image container) */
+.third-section-main-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-section-main-right img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Cards container */
+.third-section-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.thirds-section-card {
+  width: calc(50% - 1rem); /* Two cards per row */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.7rem;
+  text-align: center;
+}
+
+/* Card header */
+.third-section-card-header {
+  font-size: 1.7rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Card subtitle */
+.third-section-card-subtitle {
+  font-size: 1rem;
+  color: black;
+}
+
+/* ========================= RESPONSIVENESS ========================= */
+
+/* Tablets & Medium Screens */
+@media (max-width: 1024px) {
+  .third-section-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .third-section-main-left,
+  .third-section-main-right {
+    width: 100%;
+  }
+
+  .third-section-heading {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+
+  .third-section-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .third-section-card-container {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .thirds-section-card {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* Small Devices (Tablets & Large Mobiles) */
+@media (max-width: 768px) {
+  .third-section-main {
+    margin: 1rem 0;
+  }
+
+  .third-section-heading {
+    font-size: 2.5rem;
+  }
+
+  .third-section-subtitle {
+    font-size: 1.2rem;
+  }
+
+  
+  .third-section-main-left, .third-section-main-right {
+    width: 100%;
+    text-align: left;
+}
+
+
+  .third-section-main-right img {
+    max-width: 90%;
+  }
+
+  .thirds-section-card {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+  .third-section-container {
+    padding: 1rem;
+  }
+
+  .third-section-heading {
+    font-size: 2rem;
+  }
+
+  .third-section-subtitle {
+    font-size: 1rem;
+  }
+
+  .thirds-section-card {
+    padding: 0.8rem;
+  }
+}

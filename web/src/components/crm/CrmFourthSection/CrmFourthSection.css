@@ -1,0 +1,136 @@
+.crm-fourth-container {
+  /* max-width: 00px; */
+  width: 100%;
+  padding: 2rem;
+  margin: auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.crm-fourth-wrapper{
+  max-width: 1200px;
+  flex-direction: column;
+  margin: 2rem auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: 1rem;
+}
+.crm-fourth-container-top {
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.crm-fourth-container-header {
+  font-size: 2.8rem;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+.crm-fourth-container-subtitle {
+  font-size: 1.1rem;
+  color: white;
+  max-width: 800px;
+  text-align: center;
+}
+.crm-fourth-card-container {
+  margin-top: 3rem;
+}
+.crm-fourth-card {
+  display: flex;
+  gap: 20px;
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+.crm-fourth-card-arrow-shape {
+  width: 300px;
+  height: 100px;
+  transform: rotate(90deg);
+  background:rgb(34, 11, 148);
+  color: white;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(
+    0% 0%,
+    50.3% 0%,
+    90.3% 50%,
+    50.3% 100%,
+    0% 100%,
+    16.8% 50%
+  );
+}
+.crm-fourth-stop-icon {
+  transform: rotate(270deg);
+  margin: 10px;
+  /* padding: 1rem; */
+  font-size: 2rem;
+}
+.crm-fourth-card-content-header {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 600;
+}
+.crm-fourth-card-content-subtitle {
+  font-size: 1rem;
+  color: white;
+}
+@media (max-width: 768px) {
+  .crm-fourth-container-header {
+    font-size: 2.5rem;
+  }
+  .crm-fourth-container-subtitle {
+    font-size: 1rem;
+  }
+
+  .crm-fourth-card-arrow-shape {
+    width: 400px;
+    height: 80px;
+    margin-top: 1rem;
+  }
+  .crm-fourth-stop-icon {
+    transform: rotate(270deg);
+  }
+
+  .crm-fourth-card-content-header {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+  }
+  .crm-fourth-card-content-subtitle {
+    font-size: 1.1rem;
+    color: white;
+  }
+}
+
+@media (max-width: 540px) {
+  .crm-fourth-container-header {
+    font-size: 1.5rem;
+  }
+  .crm-fourth-container-subtitle {
+    font-size: 1rem;
+  }
+  .crm-fourth-card-content-header {
+    font-size: 1.1rem;
+  }
+  .crm-fourth-card-content-subtitle {
+    font-size: 15px;
+
+  }
+
+  .crm-fourth-card-arrow-shape {
+    transform: rotate(0deg);
+  }
+  .crm-fourth-card {
+    margin-bottom: 2rem;
+  }
+  .crm-fourth-card-arrow-shape {
+    width: 60px;
+    height: 80px;
+    margin-top: 1rem;
+  }
+  .crm-fourth-stop-icon {
+    transform: rotate(0deg);
+  }
+}

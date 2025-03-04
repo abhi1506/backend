@@ -1,0 +1,114 @@
+.soft-product-section {
+  background-color: rgb(28, 27, 27);
+  padding: 2rem 0;
+}
+
+.soft-product-container {
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.soft-product-sect-top {
+  text-align: center;
+  padding: 2rem 3rem;
+}
+
+.soft-product-sect-top h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+}
+
+.soft-product-sect-top p {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.soft-category-container {
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.soft-ware-produt-title {
+  font-size: 1.7rem;
+  color: rgba(255, 255, 255, 0.986);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.category-icon {
+  font-size: 1.8rem;
+  color: white;
+}
+
+
+.soft-product-sec-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+}
+
+.soft-product-sec-card {
+  width: calc(18% - 0.3rem);
+  margin: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.soft-product-sec-card:hover {
+  border: 1px solid white;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.soft-product-card-name {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.soft-product-card-title {
+  color: rgb(206, 201, 201);
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align:left;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .soft-product-sec-card {
+    width: 40%;
+  }
+  .soft-product-sect-top h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .soft-product-sect-top {
+    text-align: left;
+    padding: 2rem 1rem;
+  }
+  .soft-product-sec-card {
+    width: 100%;
+  }
+  .soft-product-sect-top h1 {
+    font-size: 2rem;
+  }
+  .soft-product-sect-top p {
+    font-size: 1rem;
+  }
+  .soft-ware-produt-title {
+    font-size: 1.4rem;
+  }
+}

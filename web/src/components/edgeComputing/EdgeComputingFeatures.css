@@ -1,0 +1,128 @@
+.features-container-edge {
+    background:rgb(39, 38, 38);
+    min-height: 100vh;
+    padding: 80px 40px;
+    color: white;
+}
+
+.features-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.features-left h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #ffffff, #e0e0e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.features-left p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #a8b2d1;
+    margin-bottom: 30px;
+}
+
+.features-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-item:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.feature-number {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0a0533;
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #FFD700;
+}
+
+
+.feature-item {
+    opacity: 0;
+    animation: slideIn 0.5s ease forwards;
+}
+
+.feature-item:nth-child(1) { animation-delay: 0.2s; }
+.feature-item:nth-child(2) { animation-delay: 0.4s; }
+.feature-item:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .features-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .features-left h2 {
+        font-size: 2.5rem;
+    }
+
+    .features-left p {
+        font-size: 1rem;
+    }
+
+    .feature-item:hover {
+        transform: translateX(5px);
+    }
+}
+
+@media (max-width: 480px) {
+    .features-container-edge {
+        padding: 40px 20px;
+    }
+
+    .features-left h2 {
+        font-size: 2rem;
+    }
+
+    .feature-title {
+        font-size: 1.1rem;
+    }
+}

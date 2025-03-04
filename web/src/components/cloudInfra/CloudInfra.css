@@ -1,0 +1,159 @@
+.cloud-container {
+  background-color: #000000;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+
+.grid-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(rgba(13, 27, 42, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 27, 42, 0.5) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.content-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.text-content {
+  max-width: 600px;
+  padding-right: 2rem;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #8ba3b9;
+  line-height: 1.6;
+}
+
+
+.cloud-animation-infra {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  
+}
+
+.neon-cloud-infra {
+  width: 100%;
+  max-width: 500px;
+}
+
+.cloud-svg-infra {
+  width: 100%;
+  height: auto;
+}
+
+.cloud-inner-infra {
+  fill: none;
+  stroke: #4fd1c5;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 0px #4fd1c5);
+  animation: glowPulse 3s infinite ease-in-out;
+}
+
+.cloud-orbit-infra {
+  fill: none;
+  stroke: #4a90e2;
+  stroke-width: 2;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  filter: drop-shadow(0 0 15px #4a90e2);
+  
+  animation: drawOrbit 4s infinite ease-in-out;
+}
+
+
+@keyframes glowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px #4fd1c5);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px #4fd1c5);
+  }
+}
+
+@keyframes drawOrbit {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -1000;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .text-content {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .main-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .cloud-animation-infra {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cloud-container {
+    padding: 1rem;
+  }
+
+  .main-title {
+    font-size: 1.8rem;
+  }
+}

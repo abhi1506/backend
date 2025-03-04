@@ -1,0 +1,457 @@
+
+.contact-1{
+  background-color: #000;
+ 
+}
+
+.contact-header-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #00bcd4, #3f51b5); 
+  color: #fff;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-header-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.contact-header-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+}
+
+.contact-header-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 80%;
+}
+
+.contact-header-content h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.contact-header-image {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  margin-top:2rem;
+  transform: translateY(-50%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-image {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-image:hover {
+  transform: scale(1.05); 
+}
+
+.contact-header-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+  }
+  100% {
+    box-shadow: 0 0 30px #3f51b5, 0 0 40px #3f51b5;
+  }
+}
+
+/* Section Styling */
+.contact-services {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 50px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00bcd4;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.contact-buttons a,
+.contact-buttons button {
+  background: linear-gradient(45deg, #3f51b5, #00bcd4);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-buttons a:hover,
+.contact-buttons button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.contact-buttons .mail-button {
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.contact-buttons .mail-button:hover {
+  background-color: #333;
+  color: white;
+}
+.contact-buttons .connect {
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+.contact-buttons .connect:hover {
+  background-color: #333;
+  color: white;
+}
+.contact-buttons .feed:hover {
+  background-color: #333;
+  color: white;
+}
+.contact-buttons .office1 {
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+.contact-buttons .office1:hover {
+  background-color: #333;
+  color: white;
+}
+
+.contact-map {
+  display: flex;
+  background-image: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.map-container {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.map-info {
+  flex: 1;
+}
+.map-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+.map-info p {
+  font-size: 16px;
+  color: #e0e0e0; 
+  margin-bottom: 1rem;
+}
+
+.map-link {
+  display: block;
+  color: #00bcd4;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease; 
+}
+
+.map-link:hover {
+  color: #45a049; 
+}
+
+
+.contact-motto {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.contact-motto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-motto p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .contact-header-1 {
+    flex-direction: column; 
+    padding: 40px 10px;
+    height: 800px;
+    border-radius: 0px;
+    border:none;
+  }
+  .contact-header-content {
+    max-width: 100%; 
+    text-align: center; 
+    margin-bottom: 20px;
+    margin-top: 5rem;
+  }
+  .contact-header-content h1 {
+    font-size: 36px; 
+  }
+  .contact-header-content h2 {
+    font-size: 24px;
+  }
+  .contact-header-content p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .contact-header-image {
+    position: static; 
+    margin-top: 10rem;
+  }
+  .contact-image {
+    width: 400px; 
+    height: 300px;
+  }
+  .contact-map{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* feedback */
+
+.feedback-modal {
+  border: none;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  overflow-y: auto;
+  animation: slideIn 0.3s ease-out;
+  position: relative;
+}
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.feedback-modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .feedback-modal {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  .feedback-modal .close-button {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+@media (max-width: 470px) {
+  .contact-1{
+    width: 100%;
+  }
+  .contact-header-content h1 {
+    font-size: 28px; 
+  }
+
+  
+
+  .contact-image {
+    width: 200px;
+    height: 200px;
+  }
+  .contact-header-1 {
+    height: auto;
+    min-height: 600px;
+    width: 100%; /* Ensure full width */
+    margin: 0; /* Remove any margin */
+    border-radius: 0; /* Remove border radius for full bleed */
+  }
+
+  .contact-header-content {
+    margin-top: 2rem;
+    padding: 0 15px; /* Add consistent padding matching hamburger menu */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .contact-header-content h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .contact-header-content h2 {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .contact-header-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .contact-header-image {
+    margin-top: 2rem;
+    right: auto; /* Remove absolute positioning */
+    position: relative;
+    transform: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+  }
+
+  /* Container level fixes */
+  .contact-services,
+  .contact-map,
+  .contact-motto {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .contact-services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .contact-buttons {
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact-buttons a,
+  .contact-buttons button,
+  .contact-buttons .mail-button,
+  .contact-buttons .connect,
+  .contact-buttons .office1 {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .contact-map {
+    padding: 2rem 15px;
+  }
+
+  .map-container {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .feedback-modal {
+    width: calc(100% - 30px); /* Account for padding */
+    margin: 15px;
+    padding: 1rem;
+  }
+}

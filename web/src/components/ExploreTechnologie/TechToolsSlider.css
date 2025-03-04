@@ -1,0 +1,47 @@
+.slider-container-fluid {
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+.slider-container {
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: max-content;
+  background-color: transparent;
+  will-change: transform;
+}
+
+.slider-item {
+  flex: 0 0 calc(100% / 6);
+  padding: 15px;
+  text-align: center;
+}
+
+.tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+
+@media (max-width: 768px) {
+  .slider-item {
+    flex: 0 0 calc(100% / 4);
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-item {
+    flex: 0 0 calc(100% / 3);
+  }
+}

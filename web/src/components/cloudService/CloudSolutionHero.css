@@ -1,0 +1,66 @@
+.cloud-solution-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 100vh;
+    /* margin-top: 4rem; */
+    background: linear-gradient(135deg, #463D78 0%, #71305C, #1A093A 100%);
+    color: white;
+  }
+  
+  .cloud-solution-hero-content {
+    max-width: 700px;
+  }
+  
+  .img-content-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom:1rem;
+  }
+  
+  .cloud-solution-hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .cloud-solution-hero p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin-top:-1.5rem;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cloud-solution-hero {
+      padding: 60px 15px;
+    }
+  
+   .cloud-solution-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .cloud-solution-hero p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .img-icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  }

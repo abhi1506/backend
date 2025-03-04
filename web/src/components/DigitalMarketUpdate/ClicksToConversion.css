@@ -1,0 +1,130 @@
+.clicks-to-conver-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.clicks-to-conver-card {
+  width: calc(46% - 1rem);
+  min-height: 320px;
+  /* min-width: 335px; */
+  padding: 1rem;
+  margin: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.clicks-to-conver-card .sco_show_content{
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          color: black;
+          font-weight: 600;
+          /* background-color: RED; */
+          transform: translateY(0%);
+          padding: 2rem;
+          transition: transform .3s ease-in-out;
+          
+}
+.clicks-to-conver-card:hover .sco_show_content{
+          transform: translateY(100%);
+}
+
+.clicks-to-conver-card .sco_show_content_hover{
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          text-align:center;
+          width: 100%;
+          height: 100%;
+          background-color: white;
+          transform: translateY(100%);
+          transition: transform .3s ease-in-out;
+          flex-direction: column;
+          padding: 1rem;
+          /* margin: 1rem; */
+
+}
+.sco-show-content-icon{
+          width: 50px;
+          height: 50px;
+          object-fit: contain;
+          margin: 1rem;
+}
+.click-header{
+          color: black;
+          padding-top: 1rem;
+          font-size: 1.3rem;
+          font-weight:600;
+}
+
+.click-sub{
+          color: black;
+          padding: 0rem 0.5rem;
+          font-size: 0.9rem;
+}
+.clicks-to-conver-card:hover .sco_show_content_hover{
+          transform: translateY(0%);
+}
+
+
+.sco_container_1 {
+  background-color: rgb(255,42,42);
+  margin-top: 3rem;
+
+}
+/* .sco_container_1 .sco_show_content_hover {
+          color: orange;
+          background-color: red;
+        } */
+
+.sco_container_2 {
+  background-color: rgb(255,149,35);
+  
+}
+
+.sco_container_3 {
+  background-color: rgb(58,9,253);
+  margin-top: 3rem;
+  
+}
+.sco_container_4 {
+  background-color: rgb(253, 9, 131);
+}
+.sco_container_5 {
+  background-color: rgb(253, 83, 83);
+  margin-top: 3rem;
+  
+}
+.sco_container_6 {
+  background-color: rgb(149, 255, 35);
+}
+
+@media (max-width: 1280px){
+          .click-header{
+                    font-size: 1.1rem;
+          }
+          
+          .click-sub{
+                    color: black;
+                    
+                    font-size: 0.9rem;
+          }   
+}
+
+
+
+@media (max-width: 768px){
+          .clicks-to-conver-card{
+                    width: 90%;
+          }
+        }

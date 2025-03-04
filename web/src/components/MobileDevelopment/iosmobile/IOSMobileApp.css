@@ -1,0 +1,124 @@
+.ios-mobile-app {
+    background-image: linear-gradient(to bottom, rgb(1, 1, 10) 0%, rgb(0, 0, 3) 40%, rgb(2, 2, 5) 70%, black 100%);
+    margin-top: 4rem;
+    /* padding-bottom: 4rem; */
+}
+
+/* Service Section Styles */
+ .custom-iphone-services {
+    border-top-left-radius: 35%;
+    background-color:rgba(255, 255, 255, 1);
+    transition: all .2s ease-in-out;
+}
+ .app-consulting {
+    border-top-right-radius: 35%;
+    /* background-color: rgb(246, 135, 135); */
+    background-color: rgba(76, 76, 78, 1);
+  transition: all .2s ease-in-out;
+
+}
+ .app-design {
+    border-bottom-left-radius: 35%;
+    background-color: rgba(76, 76, 78, 1);
+
+}
+ .app-design:hover,
+ .app-consulting:hover{
+  background-color: rgb(2, 34, 60);
+  color: white;
+  transform: scale(1.04);
+  transition: all .2s ease-in-out;
+}
+ .app-testing {
+    border-bottom-right-radius: 35%;
+    background-color:rgba(255, 255, 255, 1);
+    transition: all .2s ease-in-out;
+}
+
+ .app-testing:hover,
+ .custom-iphone-services:hover {
+  background-color: rgb(27, 75, 187);
+  color: white;
+  transform: scale(1.04);
+}
+
+/* Why Choose Us Section */
+.expert-team {
+    margin-left: 0px;
+}
+
+.agile-methodology {
+    margin-left: 60px;
+}
+
+.customer-centric-approach {
+    margin-left: 120px;
+}
+
+.cost-effective {
+    margin-left: 180px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .agile-methodology {
+        margin-left: 40px;
+    }
+
+    .customer-centric-approach {
+        margin-left: 80px;
+    }
+
+    .cost-effective {
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 560px) {
+    .agile-methodology,
+    .customer-centric-approach,
+    .cost-effective {
+        margin-left: 0px;
+    }
+}
+
+
+
+/* -------- */
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .custom-iphone-services,
+    .app-consulting,
+    .app-design,
+    .app-testing {
+        border-radius: 0; 
+    }
+
+    .agile-methodology {
+        margin-left: 40px;
+    }
+
+    .customer-centric-approach {
+        margin-left: 80px;
+    }
+
+    .cost-effective {
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 560px) {
+    .custom-iphone-services,
+    .app-consulting,
+    .app-design,
+    .app-testing {
+        border-radius: 0; /* Ensure no border radius for small screens */
+    }
+
+    .agile-methodology,
+    .customer-centric-approach,
+    .cost-effective {
+        margin-left: 0; /* Reset margin for very small screens */
+    }
+}
+

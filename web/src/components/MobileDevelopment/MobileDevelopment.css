@@ -1,0 +1,470 @@
+.mob-dev-container {
+  background-image: linear-gradient(to bottom, rgb(1, 1, 10) 0%, rgb(0, 0, 3) 40%, rgb(2, 2, 5) 70%, black 100%);
+    color: #ffffff; 
+    margin-top: 4rem;
+  }
+  
+
+.mob-dev-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.mob-dev-process-grid {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.mob-dev-col-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Individual Process Card */
+
+.mob-dev-card {
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  border:1px solid rgba(3, 255, 255, 0.6);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mob-dev-card:hover {
+  transform: translateY(-5px) scale(1.05); 
+  box-shadow: 0 4px 8px rgba(3, 255, 255, 0.6); 
+}
+
+.even-card {
+  margin-top: 50px;
+  margin-bottom: -30px;
+}
+
+.odd-card {
+  margin-top: 0px;
+}
+
+
+.mob-dev-content-right {
+  max-width: 500px;
+  text-align: left;
+}
+
+.mob-dev-content-right h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.mob-dev-content-right p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d5db;
+  max-width: 100%;
+}
+
+
+.mob-dev-col-left h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+
+.mob-dev-col-left p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .mob-dev-card {
+      width: 100%;
+  }
+}
+
+
+
+.mobile-dev-process {
+    padding: 50px 40px;
+}
+
+
+.process-header h2 {
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  background-color:#FFA44F;
+  padding: 70px 20px;
+  position: relative;
+  max-width: 100%;
+  max-height: 500px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.process-steps h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 5rem;
+  text-align: center; 
+}
+
+.steps-container {
+  position: absolute;
+  top: 55%; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+
+
+/* Step Card Styling */
+.step-card {
+    background: #f8f9fa;
+    border-radius: 0px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-in-out forwards;
+    animation-delay: calc(var(--delay) * 0.2s);
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+.step-icon-wrapper {
+  position: absolute;
+  top: -20px; /* Moves the icon circle above the card */
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-color, #007bff);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon Styling */
+.step-icon {
+  font-size: 1.4rem;
+  color: white;
+}
+.step-card h3 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    font-size: 15px;
+    color: #555;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+  /* Why Choose Us Section */
+  .mob-dev-why {
+    text-align: center;
+    padding: 50px 40px;
+    color: white;
+    margin-top: 50px;
+  }
+  
+  .mob-dev-why h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .mob-dev-why p {
+    text-align: left;
+    font-size: 1rem;
+    max-width: 1000px; 
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #d1d5db;
+  }
+  
+  .mob-dev-flex {
+    margin-top:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+  }
+  
+  .mob-dev-feature {
+    padding: 20px;
+    width: 200px; 
+    text-align: center;
+    margin: 20px 10px; 
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .mob-dev-left {
+    transform: translate(-10px);
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-out forwards;
+    animation-delay: s;
+   animation-iteration-count: infinite;
+  }
+  
+  /* Animation for cards coming from the right */
+  .mob-dev-right {
+    transform: translate(10px);
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-out forwards;
+    /* animation-delay: s; */
+
+  }
+  
+  /* Keyframes for left animation */
+  @keyframes slideInFromLeft {
+    from {
+      transform: translate(-100%);
+      opacity: 0;
+      transform: scale(0.9);
+
+    }
+
+    to {
+      transform: translate(0);
+      opacity: 1;
+      transform: scale(1.1);
+
+    }
+  }
+  @keyframes slideInFromRight {
+    from {
+      transform: translate(100px);
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      transform: translate(0);
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+  .mob-dev-feature:hover {
+    transform: scale(1.05); 
+  }
+  
+  .mob-dev-feature h3 {
+    font-size: 1.1rem;
+    font-weight:500;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .mob-dev-feature p {
+    font-size: 0.9rem;
+    color: #fff;
+    line-height: 1.4;
+  }
+  @media (max-width: 1024px) {
+    .process-header h2 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    .process-steps {
+      padding: 50px 15px;
+      max-height: none; /* Allow flexible height */
+    }
+  
+    .process-steps h1 {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+  
+    .steps-container {
+      position: relative; 
+      top: auto;
+      left: auto;
+      transform: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .step-card {
+      width: 90%;
+      max-width: 280px;
+      padding: 15px;
+    }
+  }
+  /* Mobile General Adjustments */
+@media only screen and (max-width: 768px) {
+    .mob-dev-container {
+      padding: 20px;
+      background: linear-gradient(180deg, #0a192f 0%, #112240 50%, #000000 100%);
+      color: #ffffff;
+    }
+    
+    .mob-dev-intro {
+      display: flex;
+      flex-direction: column;
+      padding: 40px;
+      gap: 1rem;
+    }
+    
+    .mob-dev-left h1 {
+      font-size: 2rem;
+      color:rgb(225, 232, 238);
+    }
+  
+    .mob-dev-left p {
+      font-size: 0.9rem;
+      color: rgb(207, 209, 211);
+    }
+    
+    .mob-dev-right img {
+      width: 100%;
+     
+    }
+  
+    /* Process Section */
+    .mob-dev-process-grid {
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .mob-dev-content h2 {
+      font-size: 2rem;
+    }
+  
+    .mob-dev-content p {
+      font-size: 0.95rem;
+    }
+  
+    .mob-dev-col {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .mob-dev-card {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .mob-dev-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .mob-dev-card p {
+      font-size: 0.95rem;
+      color: #d1d5db;
+    }
+  
+    /* Mobile Process Steps Section */
+    
+    .process-header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .process-steps h1 {
+      font-size: 1.8rem;
+    }
+  
+    .step-card {
+      width: 100%;
+      max-width: 250px;
+      padding: 10px;
+    }
+  
+    .step-card h3 {
+      font-size: 16px;
+    }
+  
+    .step-card p {
+      font-size: 14px;
+    }
+    /* Why Choose Us Section */
+    .mob-dev-why {
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .mob-dev-why h2 {
+      font-size: 2rem;
+    }
+  
+    .mob-dev-why p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #d1d5db;
+      margin: 0 auto;
+      max-width: 90%;
+    }
+  
+    /* Flex Container */
+    .mob-dev-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mob-dev-feature {
+      width: 100%;
+      max-width: 250px;
+    }
+  
+    .mob-dev-feature h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+  
+    .mob-dev-feature p {
+      font-size: 1rem;
+     
+    }
+  }
+  

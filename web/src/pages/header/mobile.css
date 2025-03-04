@@ -1,0 +1,128 @@
+.mobile-view-section {
+    width: 350px;
+    height: 100vh;
+    /* background-color: white; */
+    background-color: rgb(12, 12, 12);
+    /* color: white; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 4px 5px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+  }
+  
+  .mobile-view-link {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .mobile-view-link:hover {
+    background-color: #242424;
+    color: rgb(241, 241, 241);
+  }
+  
+  .cross-icon {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    margin: 0.5rem 1rem;
+  }
+  .service-item {
+    margin: 0.5rem 0;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(252, 252, 252);
+    background-color: #151515;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-header:hover {
+    background-color: #171515;
+    color: white;
+  }
+  
+  .service-arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .service-features-mobile-view {
+    /* padding-left: 2rem; */
+    padding-bottom: 1rem;
+    padding-top: 0.5rem; 
+    background: black;
+  }
+  
+  .feature-tag-mobile-view {
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    padding: 0.4rem; 
+   
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .feature-tag-mobile-view:hover {
+    color: white;
+    background-color: #100f0f;
+  }
+  .mobile-view-dropdwon-icon{
+    color: white;
+    margin-left: 15px;
+  }
+  .service-item:last-child {
+    margin-bottom: 1.5rem;
+  }
+  
+  .mobile-toggle {
+    font-size: 3rem;
+    color: white;
+    display: none;
+  }
+  .feature-tag-icon {
+    display: none;
+    padding-left: 0px;
+    transition: all 0.2s ease;
+  }
+  .feature-tag-mobile-view:hover .feature-tag-icon{
+    display: inline-block;
+    margin-left: 10px ;
+  }
+  
+  @media (max-width: 765px){
+    .nav-item{
+      display: none;
+    }
+    .mobile-toggle{
+      display: block;
+    }
+  }  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,135 @@
+
+.integration-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    background: linear-gradient(135deg, #000, #1a1a2e);
+    color: white;
+    min-height: 100vh;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .content-left {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .content-left h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.8s ease;
+  }
+  
+  .content-left h1.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .steps-container-integration {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.8s ease;
+  }
+  
+  .step.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 25px solid #0052FF;
+    transform: rotate(90deg);
+    margin-top: 1rem;
+    filter: drop-shadow(0 0 5px #0052FF);
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      filter: drop-shadow(0 0 5px #0052FF);
+    }
+    to {
+      filter: drop-shadow(0 0 15px #0052FF);
+    }
+  }
+  
+  .step-content {
+    flex: 1;
+  }
+  
+  .step-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .step-content p {
+    color: #888;
+    line-height: 1.5;
+  }
+  
+  .content-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .illustration {
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  .illustration.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .integration-container {
+      flex-direction: column;
+      padding: 2rem;
+    }
+  
+    .content-left h1 {
+      font-size: 2rem;
+    }
+  
+    .content-right {
+      margin-top: 2rem;
+    }
+  }
+

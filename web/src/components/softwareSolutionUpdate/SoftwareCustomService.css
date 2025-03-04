@@ -1,0 +1,152 @@
+.soft-custom-service-container {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-evenly;
+  margin: 3rem 0rem;
+  padding: 3rem 0rem;
+}
+
+.soft-custom-card-right {
+  width: 40%;
+  color: white;
+  margin: 1rem 1rem;
+}
+.cms-feature-left-content {
+  margin: 1rem;
+}
+.soft-custom-heading {
+  font-size: 3.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+.soft-custom-subtile {
+  font-size: 1.7rem;
+  color: var(--background-light);
+  font-weight: 100;
+  /* font-family: 'Times New Roman', Times, serif; */
+}
+.soft-custom-card-left {
+  width: 40%;
+}
+
+.soft-custom-card-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.soft-custom-card {
+  background-color: rgba(87, 227, 255, 1);
+  height: 80px;
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.soft-custom-card:hover {
+  background-color: rgb(17, 151, 178);
+  transform: scale(1.05);
+}
+
+
+.soft-custom-card::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -80px;
+  width: 0;
+  height: 0;
+  border-left: 80px solid rgba(87, 227, 255, 1);
+  border-bottom: 40px solid transparent;
+  border-top: 40px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.soft-custom-card:hover::before {
+  border-left-color: rgb(17, 151, 178);
+}
+
+.softt-custom-card-header {
+  font-size: 1.7rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.cms-feature-card-subtitle {
+  font-size: 1rem;
+  color: black;
+}
+
+@media (max-width: 1280px) {
+  .soft-custom-heading {
+    font-size: 2.8rem;
+  }
+  .soft-custom-subtile {
+    font-size: 1.4rem;
+  }
+
+  .cms-feature-card-container {
+    height: 400px;
+  }
+
+  .softt-custom-card-header {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+  .cms-feature-card-subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .soft-custom-heading {
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+  .soft-custom-card-right {
+    width: 100%;
+  }
+  .soft-custom-subtile {
+    font-size: 1.4rem;
+  }
+  .soft-custom-card-container {
+    width: 85%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .soft-custom-service-container {
+    flex-direction: column;
+    margin: 2.3rem;
+  }
+  .soft-custom-card-right {
+    width: 100%;
+    /* height: 400px; */
+  }
+  .soft-custom-card-left {
+    width: 100%;
+  }
+
+  .soft-custom-heading {
+    font-size: 2.2rem;
+    margin-top: 5rem;
+  }
+
+  .soft-custom-subtile {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .soft-custom-service-container {
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+  }
+  .softt-custom-card-header {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,148 @@
+.crm-progress-container {
+  text-align: center;
+  color: white;
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+.crm-progress-container-top{
+          padding: 1rem 2rem;
+          margin: 1rem 0rem;
+}
+.crm-progress-container-subtitle{
+          color: white;
+          max-width: 800px;
+          margin: 1rem auto;
+}
+.crm-progress-container-header {
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+.crm-progress-steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.crm-progress-steps-progress-line {
+  position: absolute;
+  top: 50%;
+  height: 4px;
+  background: blue;
+  width: 0;
+  transition: width 2s ease-in-out;
+}
+
+.crm-progre-step {
+  background: white;
+  color: blue;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 20px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.crm-progre-step.active {
+  background: blue;
+  color: white;
+}
+
+.progres-container-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.progres-container-card {
+  background: rgba(47, 44, 44, 1);
+  padding: 1rem;
+  margin: 2rem 1rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.progres-container-card:hover {
+  transform: scale(1.03);
+  background-color: rgb(21, 19, 19);
+}
+.progres-container-card h4 {
+  font-size: 1.3rem; 
+  font-weight: bold;
+  margin-bottom: 10px; 
+  color: white;
+  text-align: center;
+}
+
+.progres-container-card-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1); 
+  padding: 15px; 
+  border-radius: 50%; 
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; 
+  height: 60px; 
+}
+
+.progres-container-card:hover .progres-container-card-icon {
+  transform: scale(1.3);
+  background-color: rgba(255, 255, 255, 0.2); 
+}
+
+
+.progres-container-card-subtile {
+  color: white;
+}
+
+
+@media (max-width: 1024px) {
+  .progres-container-card {
+    margin: 5px;
+    width: calc(33%);
+    padding: 10px;
+  }
+  .progres-container-cards {
+    gap: 5px;
+  }
+}
+@media (max-width: 768px) {
+                    .progres-container-cards{
+                              flex-direction: column;
+                    }
+                    .progres-container-card {
+                              width: 100%;
+                            }
+                    .crm-progress-container-header {
+                      font-size: 2.5rem;
+                    }
+                    .crm-progress-container-subtitle {
+                      font-size: 1.3rem;
+                    }
+
+}
+ 
+  @media (max-width: 540px){
+          .crm-progress-container-header {
+                    font-size: 1.1rem;
+                
+                  }
+                  .crm-progress-container-subtitle {
+                    font-size: 15px;
+
+                  }
+  }

@@ -1,0 +1,131 @@
+.cloud-hero-businessCloud {
+  background-color: #000;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content-businessCloud {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-title-businessCloud {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #fff, #e0e0e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.02em;
+}
+
+.hero-description-businessCloud {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.mobile-buttons-businessCloud {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.mobile-btn-businessCloud {
+  background-color: #002366;
+  color: #fff;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.mobile-btn-businessCloud::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.mobile-btn-businessCloud:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 35, 102, 0.4);
+}
+
+.mobile-btn-businessCloud:hover::before {
+  left: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .hero-title-businessCloud {
+    font-size: 2.5rem;
+  }
+
+  .hero-description-businessCloud {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .mobile-buttons-businessCloud {
+    gap: 1rem;
+  }
+
+  .mobile-btn-businessCloud {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title-businessCloud {
+    font-size: 2rem;
+  }
+
+  .mobile-buttons-businessCloud {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-btn-businessCloud {
+    width: 100%;
+    max-width: 280px;
+  }
+}

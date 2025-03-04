@@ -1,0 +1,140 @@
+/* .bottom-to-top {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .bottom-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .left-to-right {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .left-to-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .form-animation {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.5s ease-out;
+  }
+  
+  .form-animation.visible {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
+  
+  .scale-in {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.8s ease-out;
+  }
+  
+  .scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  
+  .form-animation input,
+  .form-animation textarea,
+  .form-animation button {
+    transition: all 0.3s ease;
+  }
+  
+  .form-animation input:focus,
+  .form-animation textarea:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-animation button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  } */
+
+
+
+/* Bottom to Top Animation */
+.bottom-to-top-pp {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .bottom-to-top-pp.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Left to Right Animation */
+  .left-to-right-tt {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .left-to-right-tt.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Form Animation */
+  
+  
+  /* Fade In Animation */
+  .fade-in-inn {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+  }
+  
+  .fade-in-inn.visible {
+    opacity: 1;
+  }
+  
+  /* Scale In Animation */
+  .scale-in-inn {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .scale-in-inn.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Optional: Add hover effects for form elements */
+  .form-animation-ani input,
+  .form-animation-ani textarea,
+  .form-animation-ani button {
+    transition: all 0.3s ease;
+  }
+  
+  .form-animation-ani input:focus,
+  .form-animation-ani textarea:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-animation-ani button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }

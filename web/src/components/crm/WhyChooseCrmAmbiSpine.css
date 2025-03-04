@@ -1,0 +1,96 @@
+.why-choose-ambipine-crm-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: white;
+  }
+  
+  .why-choose-crm-sect-top {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+  }
+  
+  .why-ch-ambi-crm-sect-head {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .why-ch-ambi-crm-sect-subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .why-ch-ambi-crm-sect-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .why-ch-ambi-crm-sect-card {
+    background:rgb(33, 34, 35);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .why-ch-ambi-crm-sect-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  .why-ch-ambi-crm-sect-icon {
+    font-size: 2.5rem;
+    color: #f8b400;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  
+  .why-ch-ambi-crm-sect-header {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .why-ch-ambi-crm-sect-sub-sub {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: white;
+    opacity: 0.8;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .why-ch-ambi-crm-sect-head {
+      font-size: 2rem;
+    }
+  
+    .why-ch-ambi-crm-sect-subtitle {
+      font-size: 1rem;
+    }
+  
+    .why-ch-ambi-crm-sect-card {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .why-choose-ambipine-crm-section {
+      padding: 3rem 1rem;
+    }
+  
+    .why-ch-ambi-crm-sect-head {
+      font-size: 1.8rem;
+    }
+  
+    .why-ch-ambi-crm-sect-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

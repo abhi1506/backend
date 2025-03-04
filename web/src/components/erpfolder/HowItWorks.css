@@ -1,0 +1,200 @@
+/* Base Styles */
+.how-it-works-container {
+    background-color: #1a1a2e;
+    min-height: 100vh;
+    padding: 60px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .how-it-works-title {
+    font-size: clamp(2rem, 6vw, 3rem); /* Responsive font size */
+    margin-bottom: 50px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.8s ease;
+    background: linear-gradient(45deg, #4361ee, #f72585);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .how-it-works-title.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .how-it-works-content-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .how-it-works-text-content {
+    max-width: 800px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+  }
+  
+  .how-it-works-text-content p {
+    font-size: clamp(1rem, 3vw, 1.2rem); /* Responsive font size */
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .how-it-works-charts-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  /* Stick Chart Styles */
+  .how-it-works-stick-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+  }
+  
+  .how-it-works-stick-chart.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .how-it-works-stick {
+    width: 40px;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    animation: revealStick 0.5s ease forwards;
+    box-shadow: 0 0 10px rgba(67, 97, 238, 0.5);
+  }
+  
+  .how-it-works-stick-value {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(0.9rem, 2.5vw, 1rem); /* Responsive font size */
+    color: white;
+  }
+  
+  @keyframes revealStick {
+    to {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+  
+  /* Circle Chart Styles */
+  .how-it-works-circle-chart {
+    position: relative;
+    width: clamp(200px, 80vw, 300px); /* Responsive width */
+    height: clamp(200px, 80vw, 300px); /* Responsive height */
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease;
+    box-shadow: 0 0 20px rgba(67, 97, 238, 0.5);
+  }
+  
+  .how-it-works-circle-chart.animate {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .how-it-works-circle-segment {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+    opacity: 0;
+    transform-origin: center;
+    animation: revealSegment 0.5s ease forwards;
+  }
+  
+  @keyframes revealSegment {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .how-it-works-circle-label {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .how-it-works-segment-label {
+    position: absolute;
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem); /* Responsive font size */
+    color: white;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    
+    .how-it-works-stick-chart {
+      height: 250px;
+      margin-bottom: 80px;
+    }
+  
+    .how-it-works-circle-chart {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .how-it-works-text-content {
+      padding: 20px;
+    }
+  
+    .how-it-works-charts-container {
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .how-it-works-stick-chart {
+      height: 200px;
+    }
+  
+    .how-it-works-circle-chart {
+      width: 200px;
+      height: 200px;
+    }
+  }

@@ -1,0 +1,62 @@
+/* WhoWeAreSection.css */
+.who-we-are {
+    background-color: #000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .text-content {
+    flex: 1;
+    color: white;
+  }
+  
+  .text-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+  
+  .text-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+  
+  .image-content {
+    flex: 1;
+  }
+  
+  .team-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-content h1 {
+      font-size: 36px;
+    }
+  
+    .text-content p {
+      font-size: 16px;
+    }
+  }

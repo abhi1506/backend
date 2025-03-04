@@ -1,0 +1,176 @@
+
+.hybrid-mobile-app {
+  background-image: linear-gradient(to bottom, rgb(1, 1, 10) 0%, rgb(0, 0, 3) 40%, rgb(2, 2, 5) 70%, black 100%);
+  margin-top: 4rem;
+  padding-top: 2rem;
+}
+
+.hybrid-mobile-development {
+  border-top-left-radius: 35%;
+  background-color: #ffffff;
+}
+
+.cross-platform-compatibility {
+  border-top-right-radius: 35%;
+  background-color: #ff9523;
+}
+
+.performance-optimization {
+  border-bottom-left-radius: 35%;
+  background-color: #ff9523;
+}
+
+.app-testing-qa {
+  border-bottom-right-radius: 35%;
+  background-color: #ffffff;
+}
+
+
+
+.hybrid-mobile-development {
+  border-top-left-radius: 35%;
+  background-color: rgba(255, 255, 255, 1);
+  transition: all 0.2s ease-in-out;
+}
+
+
+.cross-platform-compatibility {
+  border-top-right-radius: 35%;
+  /* background-color: rgb(246, 135, 135); */
+  background-color: rgba(255, 149, 35, 1);
+  transition: all 0.2s ease-in-out;
+
+}
+
+.performance-optimization {
+  border-bottom-left-radius: 35%;
+  background-color: rgba(255, 149, 35, 1);
+  transition: all 0.2s ease-in-out;
+
+}
+.performance-optimization:hover,
+.cross-platform-compatibility:hover{
+  background-color: rgb(169, 91, 6);
+  transform: scale(1.05);
+
+}
+
+.app-testing-qa {
+  border-bottom-right-radius: 35%;
+  background-color: rgba(255, 255, 255, 1);
+  transition: all 0.2s ease-in-out;
+
+}
+
+.hybrid-mobile-development:hover,
+.app-testing-qa:hover{
+  background-color: rgb(173, 171, 171);
+  transform: scale(1.05);
+  
+}
+
+
+
+
+
+
+.hybrid-second-part {
+  text-align: center; 
+  color: white; 
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 2rem 1rem; 
+}
+
+.hybrid-second-part-heading {
+  font-size: 2rem; 
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hybrid-second-part-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  color: white; 
+  line-height: 1.5;
+}
+
+/* Why Choose Us Section */
+.expert-hybrid-developers {
+  margin-left: 0px;
+}
+
+.cost-effective-solutions {
+  margin-left: 60px;
+}
+
+.faster-development-time {
+  margin-left: 120px;
+}
+
+.seamless-maintenance-updates {
+  margin-left: 180px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .cost-effective-solutions {
+      margin-left: 40px;
+  }
+
+  .faster-development-time {
+      margin-left: 80px;
+  }
+
+  .seamless-maintenance-updates {
+      margin-left: 120px;
+  }
+}
+
+@media (max-width: 560px) {
+  .cost-effective-solutions,
+  .faster-development-time,
+  .seamless-maintenance-updates {
+      margin-left: 0px;
+  }
+}
+
+
+/* -------- */
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hybrid-mobile-development,
+  .cross-platform-compatibility,
+  .performance-optimization,
+  .app-testing-qa {
+      border-radius: 0; /* Remove border radius for mobile */
+  }
+
+  .agile-methodology {
+      margin-left: 40px;
+  }
+
+  .customer-centric-approach {
+      margin-left: 80px;
+  }
+
+  .cost-effective {
+      margin-left: 120px;
+  }
+}
+
+@media (max-width: 560px) {
+  .custom-iphone-services,
+  .app-consulting,
+  .app-design,
+  .app-testing {
+      border-radius: 0; /* Ensure no border radius for small screens */
+  }
+
+  .agile-methodology,
+  .customer-centric-approach,
+  .cost-effective {
+      margin-left: 0; /* Reset margin for very small screens */
+  }
+}
+

@@ -1,0 +1,320 @@
+
+
+.cma-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 40px 60px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8DDFEE 0%,#D49D3E, #224F51 100%);
+  flex-wrap: wrap; 
+  gap: 40px; 
+}
+
+.cma-hero-content {
+  flex: 1;
+  text-align: left; 
+  color: white;
+  max-width: 600px; 
+  margin-left:3rem;
+}
+
+.cma-hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Inria Serif', serif;
+}
+
+.cma-hero p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.cma-hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.cma-hero-img img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+.cma-container {
+    color: #fff;
+    background: #000000;
+  }
+  
+  .cma-container-main{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 20px;
+  }
+  .cma-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    /* margin-bottom: 50px; */
+    padding: 2rem 0rem;
+  }
+  
+  /* Left Section */
+  .cma-left {
+    flex: 1;
+    max-width: 45%;
+  }
+  
+  .cma-left h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Inria Serif', serif;
+    margin-bottom: 15px;
+  }
+  
+  .cma-left p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+  }
+  
+  .cma-right {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .cma-card {
+    width: 35%;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 1px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cma-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cma-card h3 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .cma-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Orange Highlighted Cards */
+  .cma-card-orange {
+    background:rgb(236, 149, 18);
+    color: white;
+  }
+  
+  .cma-card-orange h3,
+  .cma-card-orange p {
+    color: white;
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .cma-main {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .cma-left,
+    .cma-right {
+      max-width: 100%;
+    }
+  
+    .cma-right {
+      justify-content: center;
+    }
+  
+    .cma-card {
+      width: 100%;
+    }
+  }
+  
+  /* Benefits Section */
+  .cma-benefits-sol {
+    padding: 50px 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .cma-benefits-sol h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+  }
+  
+  .cma-benefits-sol p {
+    font-size: 1rem;
+    color: rgb(245, 234, 234);
+  }
+  
+  .cma-benefits-cards-sol {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cma-benefits-cards-sol .cma-b-card {
+    background: rgb(35, 29, 114);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    border:1px solid #FFA947;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s ease-out forwards;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cma-benefits-cards-sol .cma-b-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    border:2px solidrgb(245, 149, 40);
+    transition: left 0.5s ease-in-out;
+  }
+  
+  .cma-benefits-cards-sol .cma-b-card:hover::before {
+    left: 0;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .cma-benefits-cards-sol .cma-b-card h3 {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .cma-benefits-cards-sol .cma-b-card p {
+    font-size: 0.8rem;
+    color: rgb(245, 234, 234);
+  }
+  
+  /* Mobile View */
+  @media screen and (max-width: 768px) {
+    .cma-hero-content {
+    margin-top:2rem;
+      width: 100%;
+    }
+  
+    .cma-hero h1 {
+      font-size: 2rem; 
+    }
+  
+    .cma-hero p {
+      font-size: 1rem;
+    }
+  
+    .cma-hero-img {
+      width: 100%;
+    }
+  
+    .cma-hero-img img {
+      max-width: 70%; 
+    }
+  
+    .cma-hero h1 {
+      font-size: 2.2rem; 
+    }
+  
+    .cma-hero p {
+      font-size: 1rem;
+    }
+  
+    .cma-hero-img {
+      flex: unset;
+      width: 100%;
+    }
+  
+    .cma-hero-img img {
+      max-width: 80%; 
+    }
+    .cma-container {
+      padding: 30px 20px;
+    }
+    .cma-main {
+      flex-direction: column;
+      padding: 30px 20px;
+    }
+  
+    .cma-left {
+      max-width: 100%;
+    }
+  
+    .cma-left h2 {
+      font-size: 2rem;
+    }
+  
+    .cma-card {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .cma-right {
+      display: block;
+      gap: 20px;
+      max-width: 100%;
+    }
+  
+    .cma-benefits-sol {
+      padding: 0px 20px;
+    }
+  
+    .cma-benefits-cards-sol {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cma-benefits-cards-sol .cma-b-card {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+  }
+  

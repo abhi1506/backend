@@ -1,0 +1,71 @@
+
+.web-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a202c;
+  text-align: center;
+  color: white;
+}
+
+
+.web-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  opacity: 0;
+  animation: webFadeIn 1.5s ease-in-out forwards;
+}
+
+
+.web-text {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 5px;
+}
+
+
+@keyframes webFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.web-wave {
+  display: inline-block;
+  animation: wave 1s infinite ease-in-out;
+}
+
+
+.delay-0 { animation-delay: 0s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-800 { animation-delay: 0.8s; }
+.delay-1000 { animation-delay: 1s; }
+.delay-1200 { animation-delay: 1.2s; }
+.delay-1400 { animation-delay: 1.4s; }
+.delay-1600 { animation-delay: 1.6s; }
+.delay-1800 { animation-delay: 1.8s; }
+.delay-2000 { animation-delay: 2s; }
+.delay-2200 { animation-delay: 2.2s; }

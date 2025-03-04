@@ -1,0 +1,172 @@
+.creative-minds-section {
+    background-color: #000;
+    min-height: 100vh;
+    padding: 80px 20px;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .text-content {
+    flex: 1;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .title {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 60px;
+  }
+  
+  .title-break {
+    display: block;
+  }
+  
+  .mission-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .mission-item {
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 0.6s ease-out forwards;
+  }
+  
+  .mission-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .mission-item:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  .mission-bar {
+    width: 4px;
+    background: linear-gradient(to bottom, #fff, rgba(255,255,255,0.1));
+    border-radius: 2px;
+    min-height: 100%;
+  }
+  
+  .mission-content {
+    flex: 1;
+  }
+  
+  .mission-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .mission-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .image-container-creative-mind {
+    flex: 1;
+    max-width: 600px;
+    position: relative;
+    animation: fadeSlideIn 1s ease-out;
+  }
+  
+  .feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.5s ease;
+  }
+  
+  .image-container-creative-mind:hover .feature-image {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .title {
+      font-size: 56px;
+    }
+    
+    .content-container {
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 968px) {
+    .content-container {
+      flex-direction: column;
+    }
+    
+    .image-container-creative-mind {
+      order: -1;
+      max-width: 100%;
+    }
+    
+    .title {
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 36px;
+    }
+    
+    .mission-content h3 {
+      font-size: 20px;
+    }
+    
+    .mission-content p {
+      font-size: 14px;
+    }
+    
+    .content-container {
+      gap: 30px;
+    }
+  }

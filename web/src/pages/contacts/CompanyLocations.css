@@ -1,0 +1,125 @@
+.locations-map-container {
+    display: flex;
+    background-color: #0a0a1a;
+    color: white;
+    height: 100vh;
+  }
+  
+  .locations-sidebar {
+    width: 400px;
+    padding: 2rem;
+    background-color: #111;
+    overflow-y: auto;
+  }
+  
+  .locations-sidebar h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    line-height: 1.5;
+    font-weight:600;
+  }
+  
+  .locations-sidebar p {
+    color: #aaa;
+    margin-bottom: 2rem;
+  }
+  
+  .location-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .location-item {
+    background-color: #222;
+    padding: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+  
+  .location-item:hover {
+    background-color: #333;
+    border-color: #00b4db;
+  }
+  
+  .location-item.active {
+    background-color:rgb(36, 82, 92);
+    color: white;
+  }
+  
+  .location-item h3 {
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+  
+  .location-item.active h3 {
+    color: white;
+  }
+  
+  .location-item p {
+    color: #aaa;
+    margin-bottom: 0.5rem;
+  }
+  
+  .location-item.active p {
+    color: rgba(255,255,255,0.8);
+  }
+  
+  .map-container {
+    flex-grow: 1;
+  }
+  
+  .map-container iframe {
+    border: none;
+    filter: grayscale(70%) brightness(50%) contrast(120%);
+    transition: filter 0.3s ease;
+  }
+  
+  .map-container iframe:hover {
+    filter: grayscale(0%) brightness(100%) contrast(100%);
+  }
+  
+  @media (max-width: 768px) {
+    .locations-map-container {
+      flex-direction: column; 
+      height: auto; 
+
+    }
+  
+    .locations-sidebar {
+      width: 100%; 
+      padding: 1.5rem; 
+    }
+  
+    .locations-sidebar h1 {
+      font-size: 2rem; 
+      text-align: center; 
+    }
+  
+    .locations-sidebar p {
+      text-align: center; 
+    }
+  
+    .location-list {
+      gap: 0.8rem; 
+    }
+  
+    .location-item {
+      padding: 1rem; 
+      text-align: center; 
+    }
+  
+    .map-container {
+      width: 100%;
+      height: 300px; 
+    }
+  
+    .map-container iframe {
+      width: 100%;
+      height: 100%; 
+    }
+  }
+  

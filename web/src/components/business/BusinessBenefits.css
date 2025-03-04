@@ -1,0 +1,117 @@
+
+/* --------------------- */
+  .benefits-container {
+    background-image: linear-gradient(to bottom, rgb(1, 1, 10) 0%, rgb(0, 0, 3) 40%, rgb(2, 2, 5) 70%, black 100%);
+    color: #fff;
+    padding: 40px 20px;
+    max-width: 100%;
+    /* margin:0 auto; */
+  }
+  
+  .benefits-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .benefits-subtitle {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+  }
+  
+  .benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+    /* margin-right: 430px; */
+  }
+  
+  .benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    transition: all .2s ease;
+  }
+  .benefit-item:Hover{
+    /* border: 1px solid white; */
+    transform: scale(1.01);
+    background-color: #100236;
+    padding: 1rem;
+  }
+  
+  .benefit-image {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .benefit-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .benefit-content {
+    flex: 1;
+  }
+  
+  .benefit-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .benefit-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e5e5e5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .benefits-container {
+      padding: 20px;
+    }
+  
+    .benefits-title {
+      font-size: 2rem;
+    }
+  
+    .benefits-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  
+    .benefit-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .benefit-image {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .benefit-title {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .benefits-title {
+      font-size: 1.75rem;
+    }
+  
+    .benefits-subtitle {
+      font-size: 1.25rem;
+    }
+  
+    .benefit-description {
+      font-size: 0.9rem;
+    }
+  }

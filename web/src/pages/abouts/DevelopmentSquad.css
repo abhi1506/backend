@@ -1,0 +1,171 @@
+.dev-squad-section {
+    background-color: #000;
+    min-height: 100vh;
+    padding: 80px 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .squad-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .squad-title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    line-height: 1.1;
+    opacity: 0;
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  .highlight {
+    display: block;
+    color: #007bff;
+    position: relative;
+  }
+  
+  .squad-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+  }
+  
+  .squad-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    padding: 40px;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+  }
+  
+  .squad-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.03));
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+  }
+  
+  .squad-card:hover::before {
+    transform: translateX(0);
+  }
+  
+  .squad-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .icon-container {
+    background: linear-gradient(45deg, #007bff, #00e5ff);
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+  }
+  
+  .squad-card:hover .icon-container {
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  .squad-icon {
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  
+  .squad-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+    position: relative;
+  }
+  
+  .squad-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add animation delays for cards */
+  .squad-card:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .squad-card:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .squad-card:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .squad-title {
+      font-size: 48px;
+      margin-bottom: 60px;
+    }
+    
+    .squad-grid {
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .squad-title {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+    
+    .squad-card {
+      padding: 30px;
+    }
+    
+    .icon-container {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .squad-icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .squad-title {
+      font-size: 32px;
+    }
+    
+    .squad-grid {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,276 @@
+.erp-hero {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  background: url("../../assets/erphero-1.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+}
+.erp-hero::before{
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.erp-hero-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.erp-hero-left {
+  max-width: 600px;
+  color: white;
+  z-index:1;
+}
+
+.erp-hero-left h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color:#fff;
+  font-family: "Inria Serif", serif;
+}
+
+.erp-hero-left p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.erp-main-container {
+  background: linear-gradient(
+    180deg,
+    rgb(1, 18, 43) 0%,
+    rgb(6, 16, 34) 50%,
+    #000000 100%
+  );
+  color: #ffffff;
+}
+
+.erp-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem 0rem;
+  margin: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.erp-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.erp-card-img-top {
+  width: 100px;
+  height: 90px;
+  animation: pulseAnimation 2s ease-in-out infinite;
+  object-fit: cover;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.erp-card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-erp-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card-erp-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.font-weight-bolder {
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+.how-it-works {
+  /* padding: 2rem 5rem; */
+  max-width: 1200px;
+  width: 100%;
+  margin: 0rem auto;
+}
+.step-box-card-main {
+  width: 95%;
+  margin: 2rem 10px;
+  padding: 0rem 2rem;
+}
+.step-box-card {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  background-color: rgba(217, 217, 217, 0.36);
+  border-radius: 52px;
+  /* max-width:400px; */
+  width: 50%;
+  margin: 5px 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 130px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.step-box-card:nth-child(even) {
+  /* background-color: red; */
+  margin-left: 500px;
+}
+
+.step-box-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.step-number {
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: white;
+  color: #000000;
+  font-weight: bold;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+
+  transition: background-color 0.3s ease;
+}
+
+.step-box-card-body h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.step-box-card-body p {
+  font-size: 1rem;
+  color: #fcfcfc;
+}
+
+.container-erp {
+  padding: 4rem 5rem;
+}
+
+@media (max-width: 1024px) {
+  .erp-card {
+    padding: 2rem 0rem;
+    margin: 10px;
+    
+  }
+  .step-box-card {
+    max-width: 100%;
+    width: 60%;
+  }
+  .step-box-card:nth-child(even) {
+    /* background-color: red; */
+    margin-left: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .erp-hero {
+    height: 400px;
+  }
+
+  .erp-hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .erp-hero-left p {
+    font-size: 1rem;
+  }
+  .erp-card {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+  .step-box-card {
+    max-width: 100%;
+    width: 100%;
+    margin: 1rem;
+    padding-right: 2rem;
+  }
+  .step-box-card:nth-child(even) {
+    /* background-color: red; */
+    margin-left: 50px;
+  }
+  .step-number {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .container-erp {
+    padding: 1rem 2rem;
+  }
+  .how-it-works {
+    padding: 1rem 2rem;
+  }
+
+  .step-box-card-body h5 {
+    font-size: 1.1rem; /* Adjust title size */
+  }
+
+  .step-box-card-body p {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+}
+@media (max-width: 480px) {
+  .erp-hero {
+    height: 350px;
+  }
+  .how-it-works {
+    max-width: 100%;
+    margin: 0rem auto;
+  }
+  .step-box-card-main {
+    width: 100%;
+    padding: 0rem 10px;
+  }
+  .step-box-card:nth-child(even) {
+    /* background-color: red; */
+    margin-left: 5px;
+  }
+  .step-box-card {
+    margin: 5px;
+  }
+
+  .step-box-card {
+    /* flex-direction: column; */
+    height: auto;
+    padding: 5px;
+    margin: 10px 0px;
+  }
+
+  .how-it-works {
+    padding: 1rem;
+  }
+  .erp-hero-overlay {
+    padding: 0 2rem;
+  }
+  .erp-card {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  .erp-hero-left h1 {
+    font-size: 1.8rem;
+  }
+}

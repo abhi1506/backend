@@ -1,0 +1,148 @@
+.hero-section-comprehense {
+  background: linear-gradient(135deg, rgb(11, 10, 12) 0%, rgb(8, 8, 8) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0rem;
+  gap: 40px;
+}
+
+.comprehense-wrapper {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+.hero-content-comprehense {
+  max-width: 700px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.comprehense-service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero-title-comprehense {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+
+.hero-description-comprehense {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 0.8s ease-out 0.2s;
+  animation-fill-mode: both;
+}
+
+
+
+
+.comprehense-service-card {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.comprehense-service-card:hover {
+  transform: scale(1.05);
+  
+}
+
+.comprehense-service-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.comprehense-service-info h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #fff;
+}
+
+.comprehense-service-info p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .hero-title-comprehense {
+      font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section-comprehense {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+.comprehense-wrapper {
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+}
+  .comprehense-service-container {
+      align-items: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .hero-section-comprehense {
+      padding: 3rem 1.5rem;
+  }
+
+  .hero-title-comprehense {
+      font-size: 2.2rem;
+  }
+}

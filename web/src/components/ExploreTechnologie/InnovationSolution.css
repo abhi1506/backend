@@ -1,0 +1,116 @@
+.innovation-container-section {
+  padding: 60px 5%;
+  background: #000000;
+}
+
+.innovation-container-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.innovation-container-top {
+  margin-bottom: 50px;
+}
+
+.innovation-container-top h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.innovation-container-top p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.tech-container-cutting-edge {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.tech-section {
+  background:rgb(48, 46, 46);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-section::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 120px;
+  height: 120px;
+  background: rgba(55, 0, 255, 0.2);
+  border-radius: 50%;
+  z-index: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.tech-section:hover::before {
+  transform: scale(1.5);
+}
+
+.tech-header {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.tech-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.tech-item-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 18px;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #222 0%, #444 100%);
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.tech-item-item:hover {
+  background: linear-gradient(135deg, #444 0%, #666 100%);
+  transform: translateY(-3px);
+}
+
+.tech-icon {
+  font-size: 22px;
+  color: #ffd700;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .tech-container-cutting-edge {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-item-item {
+    justify-content: center;
+    text-align: center;
+  }
+}

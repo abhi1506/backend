@@ -1,0 +1,123 @@
+.marketing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #000000;
+}
+
+.marketing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+}
+
+
+.m-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all 0.2s ease;
+    filter: drop-shadow(0px 5px 5px rgb(4, 4, 14)) 
+          drop-shadow(0px 10px 10px rgb(15, 15, 62)) 
+          drop-shadow(0px 30px 10px rgb(2, 2, 36));
+    animation: marketimageanimation 4s ease;
+    animation-timeline: view();
+          
+}
+@keyframes marketimageanimation {
+    from{
+        transform: translate(-30px, -30px) rotate(0deg);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0px, 0px) rotate(90deg);
+        opacity: 1;
+
+    }
+}
+.m-img:hover{
+    transform: scale(1.03);
+}
+.m-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.m-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(7, 7, 7);
+}
+
+.m-item:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+
+.m-icon {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff20;
+    color: #ffffff;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.m-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.m-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.m-subtitle {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .marketing-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .m-left {
+        order: 2;
+    }
+
+    .m-right {
+        order: 1;
+    }
+
+    .m-item {
+        width: 100%;
+    }
+}

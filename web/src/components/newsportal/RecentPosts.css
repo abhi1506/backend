@@ -1,0 +1,83 @@
+.recent-posts {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: left;
+  background-color: rgb(0, 2, 12);
+  border-radius: 10px;
+}
+
+.recent-posts h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.recent-posts-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-post-card {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.recent-post-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recent-post-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 1rem;
+  max-width: 100%;
+}
+
+.recent-post-info {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.recent-post-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.recent-post-date {
+  font-size: 0.85rem;
+  color: #ccc; 
+  margin-top: 0.3rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .recent-posts{
+    display:none;
+  }
+  .recent-post-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .recent-post-img {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}

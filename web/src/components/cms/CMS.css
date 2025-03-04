@@ -1,0 +1,443 @@
+.cms-container-component {
+  background-image: linear-gradient(to bottom, rgb(1, 1, 10) 0%, rgb(0, 0, 3) 40%, rgb(2, 2, 5) 70%, black 100%);
+    color: #fff;
+  }
+ 
+  .cms-container-component img {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 1px; 
+  }
+  
+  
+  .cms-hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cms-hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+}
+
+  .cms-hero-image img {
+    width: 100%;
+    height: 700px; 
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .cms-hero-content {
+    width: 50%;
+    text-align: center;
+    padding: 100px 20px;
+    z-index: 1; 
+  }
+  
+  .cms-hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Inria Serif', serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .cms-hero-subtitle {
+    font-size: 1rem;
+    margin-top: -1px;
+    color:#fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+
+  .cms-content-section {
+    padding: 70px 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .cms-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .cms-section-content {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .centered-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  .centered-heading::after {
+    content: "";
+    display: block;
+    width: 400px; 
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  .cms-section-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .cms-section-image {
+    flex: 1;
+    max-width: 40%;
+  }
+  
+  .cms-section-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Card Solutions Section */
+  .cms-card-solution-section-container {
+    display: flex;
+    flex-direction: column; /* Ensures proper alignment */
+    justify-content: center;
+    align-items: center;
+}
+
+.cms-card-solution-section {
+    max-width: 1200px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 3rem 0rem;
+}
+
+/* Centered heading with border */
+.centered-solution-heading {
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    font-size: 3rem;
+    font-weight: bold;
+    /* text-align: center; */
+    /* width: fit-content; */
+    margin: auto;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.centered-solution-heading::after {
+    content: "";
+    display: block;
+    width: 300px; 
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 25%;
+    transform: translateX(-50%);
+}
+
+.cms-solution-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.cms-solution-description {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.solution-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px; /* Rounded button */
+}
+
+.solution-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Card Container */
+.cms-card-solution-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+  
+  .cms-solution-card {
+    width: 450px;
+    padding: 8px;
+    background-color: rgb(42, 6, 83);
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .cms-solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cms-solution-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cms-solution-card-content {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: #fff;
+    line-height: 1.4;
+  }
+  
+  /* Effortlessly Section */
+  .cms-effortlessly-section {
+    padding: 70px 40px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+  }
+  
+  .cms-effortlessly-image {
+    position: relative;
+    width: 100%;
+  }
+  
+  .cms-effortlessly-image img {
+    width: 100%;
+    height:350px;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .cms-effortlessly-content {
+    width: 90%;
+    padding-left: 200px;
+    padding-top: 50px;
+  }
+  
+  .cms-effortlessly-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .cms-effortlessly-subtitle {
+    font-size: 1rem;
+    color: #f8f9fa;
+    margin-bottom: 20px;
+  }
+  
+  /* Customers Section */
+  .cms-customers-section {
+    text-align: left;
+    padding: 70px 50px;
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 20px;
+    background: rgb(24, 23, 23);
+  }
+  
+  .cms-section-customers {
+    width: 70%;
+  }
+  
+  .cms-customers-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .cms-section-customers p {
+    font-size: 1rem;
+    color: #f8f9fa;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .cms-effortlessly-btn {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cms-effortlessly-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .cms-customers-image {
+    width: 80%;
+  }
+  
+  .cms-customers-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .cms-container-component{
+      width: 100%; 
+    }
+    .cms-hero-section {
+        height: auto; 
+        width: 100%; 
+        padding: 50px 20px; 
+      }
+    
+      .cms-hero-image img {
+        height: 400px; 
+    overflow: hidden;
+      }
+    
+      .cms-hero-content {
+        width: 100%; 
+        padding: 50px 20px;
+      }
+    
+      .cms-hero-title {
+        font-size: 2rem;
+    }
+    .cms-hero-subtitle {
+        font-size: 0.9rem;
+    }
+      .cms-content-section {
+        padding: 50px 10px;
+        margin-top:-4rem;
+        width: 100%; 
+      }
+    
+      .cms-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cms-section-content, 
+    .cms-section-image {
+        max-width: 100%;
+    }
+      .cms-card-solution-section-container {
+        width: 100%; 
+    }
+      
+    
+      .centered-heading {
+        font-size: 1.8rem; 
+        width: 100%; 
+        margin-top:5rem;
+      }
+    
+      .cms-section-heading {
+        font-size: 2.5rem; 
+        text-align: center;
+      }
+    
+      .cms-section-image img {
+        border-radius: 10px; 
+        width: 100%; 
+      }
+    .cms-customers-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cms-section-customers,
+    .cms-customers-image {
+      width: 100%;
+    }
+  
+    .cms-customers-heading {
+      font-size: 1.5rem;
+    }
+  
+    .cms-card-solution-section {
+        padding: 40px 20px; 
+        grid-template-columns: 1fr; 
+      }
+    
+      .centered-solution-heading {
+        font-size: 2rem; 
+        width: 100%; 
+      }
+    
+      .cms-solution-card {
+        width: 90%; 
+        margin: 0 auto 20px auto; 
+        padding: 16px; 
+      }
+    
+      .cms-solution-card-title {
+        font-size: 1.2rem; 
+      }
+    
+      .cms-solution-card-content {
+        font-size: 1rem; 
+      }
+    
+      .solution-btn {
+        width: 100%; 
+        padding: 12px 20px; 
+      }
+    /* Effortlessly Section Mobile */
+    .cms-effortlessly-section {
+      grid-template-columns: 1fr;
+    }
+  
+    .cms-effortlessly-content {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+  

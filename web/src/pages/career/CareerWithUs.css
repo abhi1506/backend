@@ -1,0 +1,138 @@
+/* Career Features Section */
+.career-features-section {
+  padding: 4rem 2rem;
+  background: #010101;
+}
+
+.career-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.career-section-para{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.career-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.career-feature-card {
+  width: 100%;
+  max-width: 350px;
+  padding: 2rem;
+  background:rgb(27, 27, 27);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.c-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.big-icons-circle-relative {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background:rgb(188, 206, 245);
+  color: #fff;
+  font-size: 2rem;
+}
+.career-feature-icon {
+  width: 40px; 
+  height: 40px;
+  object-fit: contain; 
+  display: block; 
+}
+
+.small-num-circle-absolute {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background:rgb(104, 77, 255);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.career-feature-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.career-feature-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  color:rgb(172, 169, 169);
+}
+@media (max-width: 768px) {
+  .career-features-section {
+    padding: 2rem 1rem;
+  }
+
+  .career-section-title {
+    font-size: 2rem;
+  }
+
+  .career-features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .career-feature-card {
+    max-width: 100%; 
+  }
+
+  .big-icons-circle-relative {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .small-num-circle-absolute {
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+  }
+
+  .career-feature-heading {
+    font-size: 1rem;
+  }
+
+  .career-feature-description {
+    font-size: 0.9rem;
+  }
+}

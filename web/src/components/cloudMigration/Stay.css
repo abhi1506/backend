@@ -1,0 +1,48 @@
+.stay-cards-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; 
+  }
+  
+  .stay-card {
+    color: #fff;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .stay-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .stay-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  .stay-description {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+  }
+  
+  .arrow-icon {
+    font-size: 1.5rem; 
+    color: #38bdf8; 
+  }
+  
+  .stay-description p {
+    font-size: 1rem; 
+    margin: 0; 
+    color: gray; 
+  }
+  
+  
+  .iconss {
+    font-size: 2.5rem;
+    color: #38bdf8;
+  }
+  

@@ -1,0 +1,151 @@
+
+.v-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    background-color: #0c0c0c;
+    color: #fff;
+    margin-bottom:2rem;
+}
+
+.v-content-left {
+    position: relative;
+    width: 50%;
+    min-width: 350px;
+}
+
+.v-content-video-bg {
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(35, 29, 210, 0.8), rgba(255, 0, 150, 0.8), rgba(255, 165, 0, 0.8));
+    z-index: 1;
+    border-radius: 0px;
+}
+
+.v-content-video video {
+    width: 100%;
+    height: auto;
+    z-index: 2; 
+    position: relative; 
+}
+
+
+.v-content-right {
+    width: 45%;
+    min-width: 350px;
+}
+
+.v-content-title h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color:#fff;
+}
+
+.v-content-title p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    color:#fff;
+}
+
+.erp-btn {
+    display: inline-flex;
+    align-items: center;
+    background: rgb(17, 0, 255);
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-weight: bold;
+    border-radius: 1px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.erp-btn svg {
+    margin-left: 8px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.erp-btn:hover {
+    background: rgb(10, 0, 200);
+}
+
+.erp-btn:hover svg {
+    transform: translateX(5px);  
+    color: yellow; 
+}
+
+
+.erp-btn:hover {
+    background:rgb(45, 49, 251);
+}
+
+
+.v-content-map ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.v-content-map li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.v-content-map li svg {
+    margin-right: 8px;
+    color: #ff7b00;
+}
+
+@media (max-width: 768px) {
+    .v-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px; 
+        gap: 15px; 
+    }
+
+    .v-content-left,
+    .v-content-right {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .v-content-video-bg {
+        top: 10px;
+        left: 0;
+        border-radius: 10px; 
+    }
+
+    .v-content-video video {
+        height: auto;
+        max-height: 250px;
+        border-radius: 10px;
+    }
+
+    .v-content-title h1 {
+        font-size: 2.8rem; 
+    }
+
+    .v-content-title p {
+        font-size: 18px;
+    }
+
+    .erp-btn {
+        font-size: 16px;
+        padding: 12px 14px;
+        width: 100%; 
+    }
+}

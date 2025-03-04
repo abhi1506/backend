@@ -1,0 +1,167 @@
+.custom-software-container{
+margin:0px;
+padding:0px;
+}
+.service-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.service-content {
+  flex: 1;
+  margin-right: 1.5rem;
+}
+
+.service-heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.service-paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.service-content-img {
+  flex: 1;
+  text-align: center;
+}
+
+.service-content-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.solutions-section-card,.boost-card-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 2rem; 
+  justify-content: center; 
+  padding: 2rem;
+  max-width:1200px;
+}
+
+.solutions-card {
+  max-width: 270px;
+    background-color: #2277AA;
+    display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 0px; 
+  padding: 1rem;
+  width: calc(33.33% - 2rem); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.solutions-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.solutions-card div:first-child {
+  font-size: 2rem;
+  margin-bottom: 1rem; 
+  color: #007bff;
+}
+.solutions-details h4 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.solutions-details p {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.boost-card-container {
+  gap: 2rem; 
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.boost-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px; 
+  width: 300px;
+  overflow:hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease;
+}
+
+.boost-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.boost-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+.boost-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boost-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.boost-description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+/* For screens below 1200px */
+@media (max-width: 1200px) {
+  .solutions-card {
+    width: calc(50% - 2rem); /* 2 cards per row */
+  }
+}
+
+/* For screens below 1000px */
+@media (max-width: 1000px) {
+  .solutions-card {
+    width: 100%; /* 1 card per row */
+  }
+  .solutions-section-card {
+    gap: 1.5rem; /* Adjust gap for smaller space */
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-content {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-heading {
+    font-size: 1.8rem;
+  }
+
+  .service-paragraph {
+    font-size: 0.95rem;
+  }
+}

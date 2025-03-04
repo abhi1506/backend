@@ -1,0 +1,267 @@
+
+.job-descriptions-container {
+  padding: 20px;
+  background-color: #939393;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-title {
+  font-size: 1.8rem; 
+  font-weight: 600; 
+  color: #000; 
+  text-transform: uppercase; 
+  letter-spacing: 1.2px; 
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.job-title:hover {
+  color: #007bff;
+}
+
+
+.job-description {
+  font-size: 1rem; 
+  font-weight: 500; 
+  color: #000 !important; 
+  line-height: 1.6; 
+  margin-bottom: 10px;
+  text-align: left;
+  /* background: linear-gradient(90deg, #007bff 0%, #00d4ff 100%);  */
+  background: linear-gradient(90deg, #000 0%, #000 100%); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  transition: all 0.3s ease;
+}
+
+.job-description:hover {
+  color: #007bff;
+  transform: scale(1.02);
+}
+
+
+.job-details-container {
+  background: #1C1C1C;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.job-info-item p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.info-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.job-icon {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.responsibilities-section {
+  margin-top: 20px; 
+  padding: 15px; 
+}
+
+.responsibilities-title {
+  font-size: 1.4rem; 
+  font-weight: 600; 
+  color: #003580; 
+  margin-bottom: 15px; 
+  border-bottom: 2px solid #000; 
+  padding-bottom: 5px;
+}
+
+
+.responsibilities-list {
+  list-style: none; 
+  padding-left: 0; 
+  margin: 0; 
+}
+
+
+.responsibility-item {
+  font-size: 1rem; 
+  color: #000; 
+  padding: 5px 10px; 
+}
+
+.no-responsibility-item {
+  font-size: 1rem; 
+  color: #888; 
+  font-style: italic; 
+  text-align: center; 
+  margin-top: 10px; 
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.apply-btn {
+  background-color: #0d6efd; 
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #0b5ed7; 
+  transform: translateY(-3px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.back-btn {
+  background-color: #6c757d; 
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #5c636a; 
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.job-img-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)); 
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.job-img-container:hover {
+  transform: scale(1); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+}
+
+
+.job_description_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.job-img-container:hover .job_description_img {
+  transform: scale(1.05); 
+}
+@media (max-width: 768px) {
+  .job-descriptions-container {
+    padding: 10px; 
+    background-color: #ffffff;
+    width:100%;
+  }
+
+  .job-title {
+    font-size: 1.2rem; 
+    letter-spacing: 0.8px; 
+    text-align: center; 
+  }
+
+  .job-description {
+    font-size: 0.8rem; 
+    line-height: 1.3; 
+    text-align: justify; 
+  }
+  .job-details-container {
+    padding: 10px; 
+    box-shadow:none
+  }
+
+  .job-info-item {
+    margin-bottom: 10px; 
+    gap:5px;
+    text-align:center; 
+  }
+
+  .job-info-item p {
+    font-size: 0.7rem; 
+  }
+
+  .info-value {
+    font-size: 0.7rem; 
+  }
+
+  .job-icon {
+    font-size: 0.9rem; 
+  }
+
+  .responsibilities-section {
+    padding: 4px; 
+  }
+
+  .responsibilities-title {
+    font-size: 1rem; 
+    margin-bottom: 8px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .job-title {
+    font-size: 1.4rem;
+ }
+
+ .job-description {
+    font-size: 0.9rem;
+ }
+
+ .job-details-container {
+    padding: 10px;
+ }
+
+ .job-img-container {
+   display:none;
+ }
+}
+
+@media (max-width: 576px) {
+  .button-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .apply-btn,
+  .back-btn {
+    width: 100%;
+  }
+}

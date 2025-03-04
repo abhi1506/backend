@@ -1,0 +1,77 @@
+
+
+  .services-support-container {
+    background-color: #0a0a1a;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .services-support-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .grid-item {
+    background-color: #000;
+    padding: 2rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Remove right border from last item in each row */
+  .grid-item:nth-child(2n) {
+    border-right: none;
+  }
+  
+  /* Remove bottom border from last row items */
+  .grid-item:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+  
+  /* For odd number of items, remove bottom border from last item */
+  .grid-item:last-child {
+    border-bottom: none;
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .grid-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .grid-item p {
+    color: #aaa;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .grid-item {
+      border-right: none;
+    }
+    
+    .grid-item:nth-last-child(2) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }

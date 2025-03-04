@@ -1,0 +1,237 @@
+/* Container */
+.why-choose-section-container {
+  position: relative;
+  padding: 2rem 2rem;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+/* Main Section */
+.why-choose-section-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  flex-wrap: wrap;
+}
+
+/* Left Section */
+.why-choose-section-main-left {
+  width: 40%;
+  color: white;
+  margin: 2rem 1rem;
+  text-align: left;
+}
+
+.why-choose-section-left-content {
+  margin: 1rem;
+}
+
+.why-choose-section-heading {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-family: 'Inria Serif', serif;
+}
+
+.why-choose-section-subtitle {
+  font-size: 1.2rem;
+  color: var(--background-light);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+}
+
+/* Explore Button */
+.why-choose-explore {
+  margin-top: 2rem;
+}
+
+/* Right Section */
+.why-choose-section-main-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card Section */
+.why-choose-section-why-chooses-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.why-choose-section-card-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.why-chooses-section-card {
+  background-color: #21125D;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 0.5rem;
+  text-align: left;
+  width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-chooses-section-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.why-choose-section-card-header {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.why-choose-section-card-subtitle {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+  .why-choose-section-heading {
+    font-size: 2.5rem;
+  }
+
+  .why-choose-section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .why-choose-section-card-container {
+    width: 85%;
+  }
+
+  .why-choose-section-card-header {
+    font-size: 1.1rem;
+  }
+
+  .why-choose-section-card-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .why-choose-section-main {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .why-choose-section-main-left {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .why-choose-section-main-right {
+    margin-left: -6rem;
+    width: 80%;
+  }
+
+
+  .why-choose-section-card-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose-section-container {
+    padding: 2rem;
+  }
+
+  .why-choose-section-main-left {
+    width: 100%;
+  }
+
+  .why-choose-section-main-right {
+    width: 86%;
+    margin-left: 45px;
+  }
+
+
+  .why-choose-section-card-container {
+    width: 100%;
+  }
+
+  .why-chooses-section-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .why-choose-section-heading {
+    font-size: 2rem;
+  }
+
+  .why-choose-section-subtitle {
+    font-size: 1rem;
+  }
+
+  .why-chooses-section-card {
+    padding: 1rem;
+    width: 100%;
+    /* margin-left: 50px; */
+  }
+
+  .why-choose-section-card-header {
+    font-size: 1rem;
+  }
+
+  .why-choose-section-card-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============== */
+
+
+/* Tablet and Desktop Adjustments */
+@media (min-width: 768px) {
+  .why-choose-section-container {
+    padding: 2rem;
+  }
+
+  .why-choose-section-main {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .why-choose-section-main-left {
+    width: 40%;
+    text-align: left;
+    padding: 0;
+  }
+
+  .why-choose-section-main-right {
+    width: 60%;
+  }
+
+  .why-choose-section-card-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .why-choose-section-main-left {
+    width: 40%;
+  }
+
+  .why-choose-section-main-right {
+    width: 50%;
+  }
+
+  .why-choose-section-card-container {
+    width: 80%;
+  }
+}
+
+
